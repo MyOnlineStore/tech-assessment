@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <title>MyOnlineStore</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <p><img src="logo.png" alt="logo"/></p>
+    <h3>PHP Version</h3>
+    <iframe src="phpversion.php" style="width: 75px; height: 50px; border: 0;"></iframe>
+
+    <h3>Upload Image</h3>
+    <form enctype="multipart/form-data" action="upload.php" method="POST" style="text-align: center;">
+        <p><input type="file" name="uploaded_file"/></p>
+        <p><input type="submit" value="Upload"/></p>
+    </form>
+
+    <h3>Uploaded Image</h3>
+    <img src="uploads/image.jpg" alt="Image Not Found" style="width: 960px; height: 647px; border: 1px #eee solid;"/>
+</div>
+</body>
+</html>
