@@ -14,7 +14,8 @@ Create a working with Docker to serve the `app/` content.
 
 **Requirements**
 - The used PHP [SAPI](https://en.wikipedia.org/wiki/Server_Application_Programming_Interface) needs to be [fpm](https://www.php.net/manual/en/install.fpm.php);
-- The container(s) can be started through [docker-compose](https://docs.docker.com/compose/).
+- The container(s) can be started through [docker-compose](https://docs.docker.com/compose/);
+- The web server needs to be exposed on port `8123`.
 
 The end result should look something like this (The PHP version may differ):
 ![Task #1 Result](docs/task-1.png)
