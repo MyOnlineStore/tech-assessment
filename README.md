@@ -15,17 +15,19 @@ Create a working with Docker to serve the `app/` content.
 **Requirements**
 - The used PHP [SAPI](https://en.wikipedia.org/wiki/Server_Application_Programming_Interface) needs to be [fpm](https://www.php.net/manual/en/install.fpm.php);
 - The container(s) can be started through [docker-compose](https://docs.docker.com/compose/);
+- The content must be served from the `/app` directory within the container;
 - The web server needs to be exposed on port `8123`.
 
 The end result should look something like this (The PHP version may differ):
 ![Task #1 Result](docs/task-1.png)
 
-### Task #2 - Storage & Permissions
-Make the image (and thus the upload form) work.
+### Task #2 - Storage
+Try to upload the image as provided in `resources/image.jpg` and get the storage system to work according the set requirements.
 
 **Requirements**
 - The following file needs to be uploaded: `resources/image.jpg`;
-- The uploaded image persists over container restarts (`docker-compose restart`).
+- The uploads needs to be placed in `/app/uploads`;
+- The uploaded image persists over container restarts.
 
 The end result should look something like this (The PHP version may differ):
 ![Task #2 Result](docs/task-2.png)
@@ -44,7 +46,7 @@ touch /home/hello.txt
 ```
 
 ### Task #4 - Deployment
-As requirement in Task #1 you probably have used docker-compose until now. This tool is very powerful for local development and testing but for deployments, not so much. With this final step we want you create a "production"-ready Docker image.
+As requirement in Task #1 you probably have used `docker-compose` until now. This tool is very powerful for local development and testing but for deployments, not so much. With this final step we want you create a "production"-ready Docker image.
 
 **Requirements**
 - The image tag needs to be prefixed with `sandwich-sre\`;
