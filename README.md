@@ -10,7 +10,7 @@ First of all, thanks for your interest! This assessment is made out of 5 steps a
 ## Tasks
 
 ### Task #1 - Docker
-Create a working with Docker to serve the `app/` content.
+Create a working Docker container to serve the `app/` content.
 
 **Requirements**
 - The used PHP [SAPI](https://en.wikipedia.org/wiki/Server_Application_Programming_Interface) needs to be [fpm](https://www.php.net/manual/en/install.fpm.php);
