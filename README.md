@@ -46,16 +46,18 @@ touch /home/hello.txt
 ```
 
 ### Task #4 - Deployment
-As requirement in Task #1 you probably have used `docker-compose` until now. This tool is very powerful for local development and testing but for deployments, not so much. With this final step we want you create a "production"-ready Docker image.
+As requirement in Task #1 you probably have used `docker-compose` until now. This tool is very powerful for local development and testing but for deployments, not so much. With this final step we want you create a "production"-ready Docker image that can be deployed to Kubernetes.
 
 **Requirements**
 - The image tag needs to be prefixed with `sandwich-sre\`;
 - The directory `app/` may not be used as a direct volume mount;
-- When starting the container the application should be fully functional (as per previous steps).
+- When starting the container the application should be fully functional (as per previous steps);
+- Create the YAML file(s) that are needed to deploy the application image to a Kubernetes cluster.
 
 ### Task #5 - Automation
 Task #4 is a combination of several commands and actions. Can you find a clever way to automate this?
 
 **Requirements**
 - The image tag prefix needs to be configurable;
-- There should be an easy way to build and start the containers.
+- There should be an easy way to build and start the containers;
+- Use a templating tool that enables the deployment of a variety of images, preferably also usable for different applications.
