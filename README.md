@@ -60,4 +60,4 @@ Task #4 is a combination of several commands and actions. Can you find a clever 
 **Requirements**
 - The image tag prefix needs to be configurable;
 - There should be an easy way to build and start the containers;
-- Use a templating tool that enables the deployment of a variety of images, preferably also usable for different applications.
+- Use any kind of template tooling that enables the deployment of a variety of images, preferably also usable for different applications.
